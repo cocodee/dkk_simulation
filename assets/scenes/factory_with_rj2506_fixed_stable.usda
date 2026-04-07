@@ -1,0 +1,49 @@
+#usda 1.0
+(
+    subLayers = [
+        @../../../supre_robot_assets/scenes/factory_with_rj2506_fixed.usd@
+    ]
+)
+
+over "World"
+{
+    over "Wheel_1"
+    {
+        over "steel_wheel_01_1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexHull"
+        }
+    }
+
+    over "Wheel_2"
+    {
+        over "steel_wheel_01_1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexHull"
+        }
+    }
+
+    over "Wheel_3"
+    {
+        over "steel_wheel_01_1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexHull"
+        }
+    }
+
+    over "Wheel_4"
+    {
+        over "steel_wheel_01_1" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexHull"
+        }
+    }
+}

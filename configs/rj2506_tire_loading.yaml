@@ -1,0 +1,39 @@
+{
+  "assets": {
+    "main_scene": "assets/scenes/factory_with_rj2506_fixed_stable.usda"
+  },
+  "task": {
+    "standby_pose": {
+      "position": [0.0, -1.0, 0.0],
+      "orientation_xyzw": [0.0, 0.0, 0.0, 1.0]
+    },
+    "pickup_pose": {
+      "position": [-1.2, 0.3, 0.0],
+      "orientation_xyzw": [0.0, 0.0, 0.7071, 0.7071]
+    },
+    "conveyor_place_pose": {
+      "position": [1.8, 0.2, 0.8],
+      "orientation_xyzw": [0.0, 0.0, 0.0, 1.0]
+    },
+    "conveyor_speed": 0.35,
+    "max_steps": 200,
+    "success_hold_steps": 1,
+    "max_failures": 3,
+    "arm_lift_offset": 0.25,
+    "pre_grasp_height": 0.18
+  },
+  "cameras": [
+    {
+      "name": "overview",
+      "position": [6.5, 4.2, 3.2],
+      "look_at": [0.0, 0.0, 1.0],
+      "resolution": [1280, 720]
+    },
+    {
+      "name": "robot_front",
+      "position": [0.8, 0.0, 1.8],
+      "look_at": [2.0, 0.0, 1.0],
+      "resolution": [640, 480]
+    }
+  ]
+}
